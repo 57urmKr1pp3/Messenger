@@ -73,11 +73,7 @@ def receive():
     except Exception as e:
         client_socket.close()
         sys.exit()
-
-    
-def loop_receive():
-    while True:
-        print(receive())
+        
 
 #Müll
 #_________________________________________________________________

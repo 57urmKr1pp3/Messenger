@@ -42,7 +42,7 @@ def receive(client_socket, mes_type, empfaenger):
     user = user_header.strip()        
     message = client_socket.recv(message_size).decode('utf-8')
 
-    print (f'{user} > {message} an {empfaengerfire}')    
+    print (f'{user} > {message} an {empfaenger}')    
     return f'{mes_type}{size_header}{user_header}{message}'
 
 def broadcast(sender, message):
